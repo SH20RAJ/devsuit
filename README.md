@@ -6,7 +6,6 @@
 
 
 > https://devsuit-fwbt.onrender.com
-> https://devsuit.onrender.com
 
 ## Key Features
 
