@@ -1,8 +1,12 @@
-summaryDevSuithttps://github.com/sh20raj/devsuit
+summaryDevSuitˀhttps://github.com/sh20raj/devsuit
 
 # DevSuit
 
 DevSuit is an innovative platform designed to connect students and companies through hackathons and collaborative events. It offers a dynamic space for students to showcase their skills, build portfolios, and network with peers and industry professionals.
+
+
+> https://devsuit-fwbt.onrender.com
+> https://devsuit.onrender.com
 
 ## Key Features
 
