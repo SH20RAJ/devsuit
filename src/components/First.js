@@ -20,7 +20,9 @@ export function VortexDemo() {
               Get Started
             </button>
           </Link>
-          <button className="px-4 py-2  text-white ">Watch trailer</button>
+          <Link href="/explore">
+            <button className="px-4 py-2  text-white ">Explore</button>
+          </Link>
         </div>
       </Vortex>
     </div>
