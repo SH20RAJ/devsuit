@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Code2, Users, Award, Briefcase, Rocket, Search } from "lucide-react";
 import Navbar from "./NavBar";
 import { VortexDemo } from "./First";
+import { Cards } from "./LandingPage/Cards";
 
 export default function LandingPage() {
   return (
@@ -12,69 +13,10 @@ export default function LandingPage() {
       <Navbar />
       <main className="flex-1 flex-col flex justify-center items-center text-center">
         <VortexDemo />
-
-        <section className="w-full py-12 flex flex-col items-center justify-center md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <section>
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
-              Key Features
-            </h2>
-            <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-              <Card>
-                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                  <Code2 className="w-12 h-12 text-primary" />
-                  <h3 className="text-xl font-bold">Hackathons & Events</h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400">
-                    Participate in or host exciting tech events and hackathons.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                  <Users className="w-12 h-12 text-primary" />
-                  <h3 className="text-xl font-bold">AI-Powered Matching</h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400">
-                    Find the perfect teammates based on shared interests and
-                    skills.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                  <Award className="w-12 h-12 text-primary" />
-                  <h3 className="text-xl font-bold">Skill Verification</h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400">
-                    Earn certifications and badges to validate your expertise.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                  <Briefcase className="w-12 h-12 text-primary" />
-                  <h3 className="text-xl font-bold">Job Opportunities</h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400">
-                    Explore personalized job and internship recommendations.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                  <Search className="w-12 h-12 text-primary" />
-                  <h3 className="text-xl font-bold">Project Showcase</h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400">
-                    Build and display your portfolio to stand out to employers.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center space-y-4 p-6">
-                  <Users className="w-12 h-12 text-primary" />
-                  <h3 className="text-xl font-bold">Community</h3>
-                  <p className="text-center text-gray-500 dark:text-gray-400">
-                    Connect with peers, mentors, and industry professionals.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+            <h1 className=" text-4xl m-10">Key Features</h1>
+            <Cards />
           </div>
         </section>
         <section className="w-full py-12 flex flex-col items-center justify-center md:py-24 lg:py-32">
