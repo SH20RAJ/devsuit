@@ -36,6 +36,12 @@ We welcome contributions from the community. To get involved:
 
 For detailed guidelines, refer to our [Contribution Guidelines](CONTRIBUTING.md).
 
+
+# Techstack
+
+- NextJS 14 (App Router)
+- Prisma ORM with MySQL
+
 ## License
 
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
