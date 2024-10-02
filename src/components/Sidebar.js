@@ -82,7 +82,10 @@ export function SidebarDemo({ prop }) {
           </div>
         </SidebarBody>
       </Sidebar>
+<<<<<<< HEAD
       <Navigation />
+=======
+>>>>>>> a53e0fc (Authentication Added)
       {prop}
     </div>
   );

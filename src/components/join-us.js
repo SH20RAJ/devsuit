@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+=======
+'use client'
+
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { signIn } from "next-auth/react"
+>>>>>>> a53e0fc (Authentication Added)
 
 export default function JoinUS() {
   return (
@@ -22,7 +30,11 @@ export default function JoinUS() {
           {/* <Icons.google className="mr-2 h-4 w-4" /> */}
           Google
         </Button>
+<<<<<<< HEAD
         <Button variant="outline">
+=======
+        <Button variant="outline" onClick={() => signIn("github", { redirectTo: "/explore" })}>
+>>>>>>> a53e0fc (Authentication Added)
           {/* <Icons.gitHub className="mr-2 h-4 w-4" /> */}
           GitHub
         </Button>
