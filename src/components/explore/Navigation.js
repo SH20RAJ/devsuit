@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-import React from 'react'
-
-export default function Navigation() {
-  return (
-    <div>
-      Navigation
-    </div>
-  )
-=======
 "use client";
 
 import { signOut } from "@/auth";
@@ -144,5 +134,4 @@ export default function AppNavbar() {
       </NavbarMenu>
     </Navbar>
   );
->>>>>>> a53e0fc (Authentication Added)
 }
