@@ -14,11 +14,7 @@
     "components": "@/components",
     "utils": "@/lib/utils",
     "ui": "@/components/ui",
-<<<<<<< HEAD
     "lib": "@/lib",
-=======
-    "lib": "@/lib",̦
->>>>>>> a53e0fc (Authentication Added)
     "hooks": "@/hooks"
   }
 }
