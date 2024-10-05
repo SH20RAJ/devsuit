@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
-const { nextui } = require("@nextui-org/react");
+const { nextui } = require('@nextui-org/theme');
 
->>>>>>> a53e0fc (Authentication Added)
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ["class"],
@@ -10,11 +7,8 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-<<<<<<< HEAD
-=======
     // make sure it's pointing to the ROOT node_module
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
->>>>>>> a53e0fc (Authentication Added)
   ],
   theme: {
   	extend: {
@@ -89,9 +83,5 @@ module.exports = {
   		}
   	}
   },
-<<<<<<< HEAD
-  plugins: [require("tailwindcss-animate")],
-=======
   plugins: [require("tailwindcss-animate"), nextui()],
->>>>>>> a53e0fc (Authentication Added)
 };
