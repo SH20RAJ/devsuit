@@ -6,6 +6,8 @@ import { Code2, Users, Award, Briefcase, Rocket, Search } from "lucide-react";
 import Navbar from "./NavBar";
 import { VortexDemo } from "./First";
 import { Cards } from "./LandingPage/Cards";
+import { ToolTip } from "./LandingPage/ToolTip";
+import { JoinWaitList } from "./LandingPage/JoinWaitList";
 
 export default function LandingPage() {
   return (
@@ -47,38 +49,13 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 flex flex-col items-center justify-center md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Join the DevSuit Community Today
-                </h2>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Whether you're looking to compete, connect, or collaborate,
-                  DevSuit is the ultimate platform to achieve your goals in
-                  tech.
-                </p>
-              </div>
-              <div className="w-full max-w-sm space-y-2">
-                <form className="flex space-x-2">
-                  <Input
-                    className="flex-1"
-                    placeholder="Enter your email"
-                    type="email"
-                  />
-                  <Button type="submit">Sign Up</Button>
-                </form>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  By signing up, you agree to our{" "}
-                  <Link className="underline underline-offset-2" href="#">
-                    Terms & Conditions
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
+
+        <section>
+          <h1 className="text-4xl font-bold m-4">Users</h1>
+          <ToolTip />
         </section>
+
+        <JoinWaitList />
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-500 dark:text-gray-400">
