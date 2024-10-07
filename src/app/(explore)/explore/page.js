@@ -2,14 +2,20 @@ import React from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Blogs } from "@/components/explore/Blogs";
+import { SearchAnything } from "@/components/SearchAnything";
 
 export default function page() {
   return (
-    <div className="flex flex-col mt-10 justify-center   h-screen container">
-      <h1 className="text-2xl text-center font-bold mx-20 mb-4">Explore</h1>
-      <hr className="w-full h-1 bg-blue-500 rounded-full m-4" />
-      <div className="flex flex-col gap-10">
-        <Blogs />
+    <div className="flex justify-center items-center border w-full flex-col">
+      <div className="min-h-[50vh]">
+        <SearchAnything />
+      </div>
+      <div className="flex flex-col mt-10 justify-center   h-screen container">
+        <h1 className="text-2xl text-center font-bold mx-20 mb-4">Explore</h1>
+        <hr className="w-full h-1 bg-blue-500 rounded-full m-4" />
+        <div className="flex flex-col gap-10">
+          <Blogs />
+        </div>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export default function JoinUS() {
           {/* <Icons.google className="mr-2 h-4 w-4" /> */}
           Google
         </Button>
-        <Button variant="outline" onClick={() => signIn("github", { redirectTo: "/explore" })}>
+        <Button variant="outline" onClick={() => signIn("github", { redirectTo: "/onboard" })}>
           {/* <Icons.gitHub className="mr-2 h-4 w-4" /> */}
           GitHub
         </Button>

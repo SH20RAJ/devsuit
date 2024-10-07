@@ -10,6 +10,7 @@ import {
   User,
   Settings,
   LogOut,
+  TornadoIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -143,20 +144,31 @@ export default function Navbar() {
             <DropdownMenuContent align="end" className="w-56">
               <DropdownMenuLabel className="font-normal">
                 <div className="flex flex-col space-y-1">
-                  <p className="text-sm font-medium leading-none">John Doe</p>
+                  <p className="text-sm font-medium leading-none">Shaswat Raj</p>
                   <p className="text-xs leading-none text-muted-foreground">
-                    john.doe@example.com
+                    mail@sh20raj.com
                   </p>
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
+                <Link className="flex" href={"/profile"}>
                 <User className="mr-2 h-4 w-4" />
                 <span>Profile</span>
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>
+                <Link className="flex" href={"/to-do"}>
+                <TornadoIcon className="mr-2 h-4 w-4" />
+                <span>To-Do</span>
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Settings className="mr-2 h-4 w-4" />
-                <span>Settings</span>
+                <Link className="flex" href={"/settings"}>
+                  <Settings className="mr-2 h-4 w-4" />
+                  <span>Settings</span>
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>

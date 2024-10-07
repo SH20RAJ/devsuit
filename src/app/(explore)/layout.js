@@ -7,8 +7,7 @@ export default function layout({ children }) {
   return (
     <div>
       <Navbar/>
-      <SearchAnything/>
-      <div className="container">
+      <div className=" ">
         {children}
       </div>
     </div>
