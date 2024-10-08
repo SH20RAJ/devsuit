@@ -8,6 +8,7 @@ import { VortexDemo } from "./First";
 import { Cards } from "./LandingPage/Cards";
 import { ToolTip } from "./LandingPage/ToolTip";
 import { JoinWaitList } from "./LandingPage/JoinWaitList";
+import { FeaturedSection } from "./LandingPage/FeaturedSection";
 
 export default function LandingPage() {
   return (
@@ -49,6 +50,8 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        <FeaturedSection/>
 
         <section>
           <h1 className="text-4xl font-bold m-4">Users</h1>

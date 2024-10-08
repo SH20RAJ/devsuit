@@ -29,7 +29,7 @@ export default function page() {
       <div className="flex flex-col mt-10 justify-center my-10   h-screen container">
         <h1 className="text-2xl text-center font-bold mx-20 mb-4">Explore</h1>
         <hr className="w-full h-1 bg-blue-500 rounded-full m-4" />
-        <div className="flex  gap-10">
+        <div className="flex justify-center items-center md:flex-row flex-col gap-10">
           <Blogs />
           <div className="flex flex-col ">
             <h1 className="text-2xl text-center font-bold mx-20">Hackathons</h1>

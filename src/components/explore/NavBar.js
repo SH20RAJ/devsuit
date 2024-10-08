@@ -33,7 +33,7 @@ export default function Navbar() {
     <header className="sticky flex justify-center  text-center top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 justify-center items-center self-center">
         <div id="logo" className="mr-4 hidden md:flex">
-          <Link className="mr-6 flex items-center space-x-2" href="/">
+          <Link className="mr-6 flex items-center space-x-2" href="/explore">
             <Image
               src="/logo.png"
               alt="DevConnect Logo"
