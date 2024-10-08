@@ -3,18 +3,47 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Blogs } from "@/components/explore/Blogs";
 import { SearchAnything } from "@/components/SearchAnything";
+import { MeteorCard } from "@/components/explore/MeteorCard";
 
 export default function page() {
+  const hackathons = [
+    {
+      title: "Google Hash Code 2024",
+      description: "A team programming competition organized by Google.",
+    },
+    {
+      title: "Microsoft Imagine Cup 2024",
+      description:
+        "A global competition for students to create technology solutions.",
+    },
+    {
+      title: "Amazon Alexa Skills Challenge 2024",
+      description: "A challenge to develop new skills for Amazon Alexa.",
+    },
+  ];
   return (
     <div className="flex justify-center items-center border w-full flex-col">
       <div className="min-h-[50vh]">
         <SearchAnything />
       </div>
-      <div className="flex flex-col mt-10 justify-center   h-screen container">
+      <div className="flex flex-col mt-10 justify-center my-10   h-screen container">
         <h1 className="text-2xl text-center font-bold mx-20 mb-4">Explore</h1>
         <hr className="w-full h-1 bg-blue-500 rounded-full m-4" />
-        <div className="flex flex-col gap-10">
+        <div className="flex  gap-10">
           <Blogs />
+          <div className="flex flex-col ">
+            <h1 className="text-2xl text-center font-bold mx-20">Hackathons</h1>
+            <hr className="w-full h-1 bg-blue-500 rounded-full m-4" />
+            <div className="flex flex-col gap-10">
+              {hackathons.map((hackathon) => (
+                <MeteorCard
+                  key={hackathon.id}
+                  title={hackathon.title}
+                  description={hackathon.description}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
