@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Blogs } from "@/components/explore/Blogs";
 import { SearchAnything } from "@/components/SearchAnything";
 import { MeteorCard } from "@/components/explore/MeteorCard";
+import { Users } from "@/components/explore/Users";
 
 export default function page() {
   const hackathons = [
@@ -26,7 +27,14 @@ export default function page() {
       <div className="min-h-[50vh]">
         <SearchAnything />
       </div>
-      <div className="flex flex-col mt-10 justify-center my-10   h-screen container">
+
+      <section>
+        <div className="flex flex-col justify-center items-center w-full">
+          <Users />
+        </div>
+      </section>
+
+      <section className="flex flex-col mt-10 justify-center my-10   h-screen container">
         <h1 className="text-2xl text-center font-bold mx-20 mb-4">Explore</h1>
         <hr className="w-full h-1 bg-blue-500 rounded-full m-4" />
         <div className="flex justify-center items-center md:flex-row flex-col gap-10">
@@ -45,7 +53,7 @@ export default function page() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -13,48 +13,48 @@ import {
 export function FeaturedSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Empowering Developers",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "DevSuit is designed for students, developers, and tech enthusiasts to showcase their skills and collaborate on innovative projects.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "User-Friendly Interface",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Navigate through DevSuit with ease, making it simple to connect with peers and industry professionals.",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
+      title: "Affordable Access",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Join hackathons and events without financial barriers. No hidden fees, no credit card required.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Reliable Platform",
+      description: "Experience uninterrupted access to DevSuit's features and services.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Collaborative Environment",
+      description: "Form teams and work together seamlessly on projects and hackathons.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "24/7 Support",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Our support team and AI agents are available around the clock to assist you.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "Satisfaction Guaranteed",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "If you're not satisfied with DevSuit, we're here to make it right.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Comprehensive Features",
+      description: "Explore a wide range of tools and resources to enhance your tech journey.",
       icon: <IconHeart />,
     },
   ];

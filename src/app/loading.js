@@ -3,7 +3,7 @@ import React from "react";
 
 export default function loading() {
   return (
-    <div>
+    <div className="flex items-center justify-center h-screen">
       <style jsx>{`
         .loader {
           --size: 250px;

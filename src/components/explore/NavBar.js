@@ -43,7 +43,7 @@ export default function Navbar() {
             <span className="hidden font-bold sm:inline-block">DevSuit</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
-            <Link href="/dashboard">Dashboard</Link>
+            <Link href="/posts">Posts</Link>
             <Link href="/hackathons">Hackathons</Link>
             <Link href="/teams">Teams</Link>
             <Link href="/jobs">Jobs</Link>
@@ -63,10 +63,10 @@ export default function Navbar() {
           <SheetContent side="left" className="w-[240px] sm:w-[300px]">
             <nav className="flex flex-col space-y-4">
               <Link
-                href="/dashboard"
+                href="/posts"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Dashboard
+                Posts
               </Link>
               <Link
                 href="/hackathons"
