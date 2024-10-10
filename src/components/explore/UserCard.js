@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { MessageCircleCode } from "lucide-react";
+import Link from "next/link";
 
 export default function UserCard({ name, username, bio, skills, avatar }) {
   return (
@@ -18,7 +19,6 @@ export default function UserCard({ name, username, bio, skills, avatar }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-
       className="w-full"
     >
       <Card className="max-w-sm w-full mx-auto shadow-lg rounded-lg overflow-hidden">
@@ -32,9 +32,11 @@ export default function UserCard({ name, username, bio, skills, avatar }) {
           <div className="ml-3">
             <CardTitle className="text-lg font-semibold">{name}</CardTitle>
             <CardDescription className="text-sm">
-              <Button variant="link" className="">
-                @{username}
-              </Button>
+              <Link href={`/user/${username}`}>
+                <Button variant="link" className="">
+                  @{username}
+                </Button>
+              </Link>
             </CardDescription>
           </div>
         </CardHeader>
@@ -56,9 +58,12 @@ export default function UserCard({ name, username, bio, skills, avatar }) {
         <hr />
         <CardFooter className="flex justify-between items-center p-4 gap-2">
           <Button className="text-sm w-full rounded-lg px-4 py-2">
-            Follow
+            Connect
           </Button>
-          <Button className="text-sm border rounded-lg px-4 py-2">
+          <Button
+            variant="outline"
+            className="text-sm border rounded-lg px-4 py-2"
+          >
             <MessageCircleCode className="w-4 h-4 " />
           </Button>
         </CardFooter>
