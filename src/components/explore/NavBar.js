@@ -136,7 +136,7 @@ export default function Navbar() {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="relative h-8 w-8 rounded-full">
                 <Avatar className="h-8 w-8">
-                  <AvatarImage src="/placeholder-user.jpg" alt="User" />
+                  <AvatarImage src="https://github.com/sh20raj.png" alt="User" />
                   <AvatarFallback>U</AvatarFallback>
                 </Avatar>
               </Button>
